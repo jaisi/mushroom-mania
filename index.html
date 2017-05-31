@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="MushroomApp">
+<head>
+	<title>Mushroom Mania!!</title>	
+	<link rel="stylesheet" type="text/css" href="./lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div ng-controller="LoadCtrl">
+		<form>
+			<div class="form-group">
+				<label for="textInput">Mushroom Mania!!!</label>
+				<div class="radio">
+					<input type="text" name="textInput" class="form-control" ng-model="searchText"><br>
+					<label><input type="radio" name="mushroom" value="false" ng-model="edible">Poisonous</label>
+					<label><input type="radio" name="mushroom" value="true" ng-model="edible">Non-Poisonous</label>
+				</div>
+			</div>
+		</form>
+		<div ng-view>		 
+		  </div>
+		</div>
+	</div>
+  	
+
+
+	<script type="text/javascript" src="./lib/node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="./lib/node_modules/bootstrap/dist/js/bootstrap.min.js">
+	</script>
+	<script type="text/javascript" src="./lib/node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="./lib/node_modules/angular-route/angular-route.min.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/loadctrl.js"></script>
+</body>
+</html>

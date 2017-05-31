@@ -1,0 +1,7 @@
+<div ng-repeat="mushroom in mushrooms | filter: {description: searchText, edible: 	edible}">
+  <div class="row">
+    <div class="col-sm-4">{{mushroom.name}}</div>
+    <div class="col-sm-4">{{mushroom.edible}}</div>
+    <div class="col-sm-4">{{mushroom.description}}</div>
+  </div>
+</div>
